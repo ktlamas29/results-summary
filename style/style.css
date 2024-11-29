@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+/* ### Primary */
+
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+/* ## Gradients */
+
+/* (background) */
+--Light-slate-blue : hsl(252, 100%, 67%);
+--Light-royal-blue: hsl(241, 81%, 54%);
+
+/* (circle) */
+--Violet-blue: hsla(256, 72%, 46%, 1);  
+--Persian-blue: hsla(241, 72%, 46%, 0);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+body{
+    height: 100vh;
+    background: var(--Pale-blue);   
+    font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 50%;
+    background: var(--White);
+    height: 425px;
+    display: flex;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 4px 4px 5px var(--Light-lavender);
+}
+
+/* blue */
+
+.cardBl {
+    background: var(--Light-royal-blue);
+    /* background: rgb(238, 164, 130);  */
+    width: 50%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 30px;
+}
+
+.title-bl{
+    width: 100%;
+    height: 35px;
+    /* background: brown; */
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.title-bl p{
+    color: white;
+    font-size: 24px;
+    
+}
+
+.circle-bl{
+    /* background: var(--Violet-blue); */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+
+.circle{ 
+    width: 55%;
+    height: 100%;
+    background: var(--Cobalt-blue);
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.circle h1{
+    font-size: 45px;
+}
+
+.circle p{
+    color: var(--Light-lavender);
+}
+
+.description{
+    /* background: teal; */
+    color: white;
+    margin: 25px 0px;
+    padding: 10px;
+}
+
+.description h2{
+    text-align: center;
+}
+
+.description p{
+    padding: 8px;
+    text-align: center;
+}
+
+
+
+
+/* white */
+
+.cardWh {
+    width: 50%;
+    padding: 30px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cardWh h2{
+    color: var(--Dark-gray-blue);
+    margin-bottom: 20px;}
+
+
+.conten-style{
+    display: flex;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px ;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px ;
+    -o-border-radius: 5px ;
+}
+
+.conten-style:hover{
+    letter-spacing: 1px
+}
+
+.conten-style .RePor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+.Reaction{
+    background:hsla(0, 100%, 67%, 0.075);
+}
+
+.Reaction .RePor p{
+    margin: 0px 10px;
+    color: var(--Light-red);
+}
+
+.Reaction .RePor  span{
+    color: var(--Light-lavender);
+}
+
+.Reaction .RePor  span strong{
+    color: var(--Dark-gray-blue);
+}
+
+.Memory{
+    background:  hsl(39, 100%, 56%, 0.075);
+}
+
+.Memory p{
+    margin: 0px 10px;
+    color: var(--Orangey-yellow);
+}
+
+.Memory .RePor  span{
+    color: var(--Light-lavender);
+}
+
+.Memory .RePor  span strong{
+    color: var(--Dark-gray-blue);
+}
+
+.Verbal{
+    background: hsl(166, 100%, 37%, 0.075);
+}
+
+.Verbal p{
+    margin: 0px 10px;
+    color: var(--Green-teal);
+}
+
+.Verbal .RePor  span{
+    color: var(--Light-lavender);
+}
+
+.Verbal .RePor  span strong{
+    color: var(--Dark-gray-blue);
+}
+
+.Visual{
+    background: hsl(234, 85%, 45%, 0.075);
+}
+
+.Visual p{
+    margin: 0px 10px;
+    color: var(--Cobalt-blue);
+}
+
+.Visual .RePor span{
+    color: var(--Light-lavender);
+}
+
+.Visual .RePor  span strong{
+    color: var(--Dark-gray-blue);
+}
+
+
+.btn{
+    background: var(--Dark-gray-blue);
+    width: 100%;
+    /* background: red; */
+    text-align: center;
+    padding: 13px;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background: linear-gradient(90deg, 
+    var(--Light-red) 0%,
+    var(--Green-teal) 35%, 
+    var(--Cobalt-blue) 100%);
+    letter-spacing: 1px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        /* background: yellowgreen; */
+        
+    }
+
+    .cardBl{
+        width: 100%;
+        padding: 25px;
+    }
+
+    .circle{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        /* background: red; */
+    }
+
+    .cardBl{
+        width: 100%;
+        padding: 25px;
+
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .circle{
+        width: 50%;
+    }
+
+    .cardWh{
+        width: 100%;
+        background: var(--White);
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 992px){
+    .container {
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        /* background: red; */
+    }
+
+    .cardBl{
+        width: 100%;
+        padding: 25px;
+
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .circle{
+        width: 50%;
+    }
+
+    .cardWh{
+        width: 100%;
+        background: var(--White);
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+}
