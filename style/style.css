@@ -251,8 +251,8 @@ body{
 .btn{
     background: var(--Dark-gray-blue);
     width: 100%;
-    /* background: red; */
-    text-align: center;
+    /*background: red;
+    */text-align: center;
     padding: 13px;
     border-radius: 25px;
     margin-top: 30px;
@@ -265,11 +265,13 @@ body{
 }
 
 .btn:hover{
-    background: linear-gradient(90deg, 
-    var(--Light-red) 0%,
-    var(--Green-teal) 35%, 
-    var(--Cobalt-blue) 100%);
+    background: linear-gradient(90deg,     var(--Light-red) 0%,    var(--Green-teal) 35%,     var(--Cobalt-blue) 100%);
     letter-spacing: 1px;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
 }
 
 
